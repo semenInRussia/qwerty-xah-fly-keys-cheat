@@ -1,0 +1,383 @@
+   q ("'" . xah-reformat-lines)
+   w ("," . xah-shrink-whitespaces)
+   ' ("-" . xah-cycle-hyphen-underscore-space)
+   e ("." . xah-backward-kill-word)
+   z (";" . xah-comment-dwim)
+   [ ("/" . hippie-expand)
+   - ("[" . xah-backward-punct )
+   = ("]" . xah-forward-punct)
+   , ("`" . other-frame)
+
+   ("1" . xah-extend-selection)
+   ("2" . xah-select-line)
+   ("3" . delete-other-windows)
+   ("4" . split-window-below)
+   ("5" . delete-char)
+   ("6" . xah-select-block)
+   ("7" . xah-select-line)
+   ("8" . xah-extend-selection)
+   ("9" . xah-select-text-in-quote)
+   ("0" . xah-pop-local-mark-ring)
+
+   a ("a" . xah-fly-M-x)
+   n ("b" . isearch-forward)
+   i ("c" . previous-line)
+   h ("d" . xah-beginning-of-line-or-block)
+   d ("e" . xah-delete-backward-char-or-bracket-text)
+
+   y ("f" . undo)
+   u ("g" . backward-word)
+   j ("h" . backward-char)
+   g ("i" . xah-delete-current-text-block)
+   c ("j" . xah-copy-line-or-region)
+   v ("k" . xah-paste-or-paste-previous)
+
+   p ("l" . xah-insert-space-before)
+   m ("m" . xah-backward-left-bracket)
+   l ("n" . forward-char)
+   s ("o" . open-line)
+   e ("p" . xah-kill-word)
+   x ("q" . xah-cut-line-or-region)
+   o ("r" . forward-word)
+   ; ("s" . xah-end-of-line-or-block)
+   k ("t" . next-line)
+   f ("u" . xah-fly-insert-mode-activate)
+   . ("v" . xah-forward-right-bracket)
+   , ("w" . xah-next-window-or-frame)
+   b ("x" . xah-toggle-letter-case)
+   t ("y" . set-mark-command)
+   / ("z" . xah-goto-matching-bracket)
+
+------
+CTRL key
+------
+
+     ("C-SPC" . xah-fly-leader-key-map)
+
+     ("C-9" . scroll-down-command)
+     ("C-0" . scroll-up-command)
+
+     ("C-7" . xah-previous-user-buffer)
+     ("C-8" . xah-next-user-buffer)
+
+     ("C-5" . xah-previous-emacs-buffer)
+     ("C-6" . xah-next-emacs-buffer)
+
+     ("C-3" . previous-error)
+     ("C-4" . next-error)
+
+     ("C-a" . mark-whole-buffer)
+     ("C-t" . xah-new-empty-buffer)
+     ("C-n" . xah-new-empty-buffer)
+     ("C-S-n" . make-frame-command)
+     ("C-o" . find-file)
+     ("C-s" . save-buffer)
+     ("C-S-s" . write-file)
+     ("C-S-t" . xah-open-last-closed)
+     ("C-v" . yank)
+     ("C-w" . xah-close-current-buffer)
+     ("C-z" . undo)
+
+     ("C-=" . text-scale-increase)
+     ("C--" . text-scale-decrease)
+
+     ("C-d" . pop-global-mark))
+
+------
+---------------------------------
+------
+C-SPACE <NOThing>
+------
+---------------------------------
+------
+
+-----
+Ctrl-SPACE TAB
+------
+   g ("i" . complete-symbol)
+   u ("g" . indent-rigidly)
+   o ("r" . indent-region)
+   ; ("s" . indent-sexp)
+
+   ;; temp
+   ("1" . abbrev-prefix-mark)
+   ("2" . edit-abbrevs)
+   ("3" . expand-abbrev)
+   ("4" . expand-region-abbrevs)
+   ("5" . unexpand-abbrev)
+   ("6" . add-global-abbrev)
+   ("7" . add-mode-abbrev)
+   ("8" . inverse-add-global-abbrev)
+   ("9" . inverse-add-mode-abbrev)
+   ("0" . expand-jump-to-next-slot)
+
+   ] ("=" . expand-jump-to-previous-slot)))
+
+------------
+Ctrl-SPACE i
+------------
+   w ("`" . xah-open-in-external-app)
+   e ("." . find-file)
+   i ("c" . bookmark-bmenu-list)
+   d ("e" . ibuffer)
+   y ("f" . xah-open-recently-closed)
+   u ("g" . xah-open-in-terminal)
+   j ("h" . recentf-open-files)
+   g ("i" . xah-copy-file-path)
+   p ("l" . bookmark-set)
+   l ("n" . xah-new-empty-buffer)
+   s ("o" . xah-show-in-desktop)
+   r ("p" . xah-open-last-closed)
+   o ("r" . xah-open-file-fast)
+   ; ("s" . write-file)
+   f ("u" . xah-open-file-at-cursor)
+   t ("y" . xah-list-recently-closed)
+
+--------
+Ctrl-SPACE d
+-------
+
+   ("RET" . insert-char)
+   ("SPC" . xah-insert-unicode)
+
+   W ("W" . xah-insert-double-angle-bracket)
+   n ("b" . xah-insert-black-lenticular-bracket)
+   i ("c" . xah-insert-ascii-single-quote)
+   h ("d" . xah-insert-double-curly-quote)
+   y ("f" . xah-insert-emacs-quote)
+   u ("g" . xah-insert-ascii-double-quote)
+   j ("h" . xah-insert-brace) ; {}
+   g ("i" . xah-insert-curly-single-quote)
+   p ("l" . xah-insert-formfeed)
+   m ("m" . xah-insert-corner-bracket)
+   l ("n" . xah-insert-square-bracket) ; []
+   r ("p" . xah-insert-single-angle-quote)
+   o ("r" . xah-insert-tortoise-shell-bracket )
+   ; ("s" . xah-insert-string-assignment)
+   k ("t" . xah-insert-paren)
+   f ("u" . xah-insert-date)
+   , ("w" . xah-insert-angle-bracket)
+   t ("y" . xah-insert-double-angle-quote)
+
+--------
+Ctrl-SPACE j
+-------
+   a ("a" . apropos-command)
+   n ("b" . describe-bindings)
+   i ("c" . describe-char)
+   h ("d" . apropos-documentation)
+   d ("e" . view-echo-area-messages)
+   y ("f" . describe-face)
+   u ("g" . info-lookup-symbol)
+   j ("h" . describe-function)
+   g ("i" . info)
+   c ("j" . man)
+   v ("k" . describe-key)
+   p ("l" . view-lossage)
+   m ("m" . xah-describe-major-mode)
+   l ("n" . describe-variable)
+   s ("o" . describe-language-environment)
+   o ("r" . apropos-variable)
+   ; ("s" . describe-syntax)
+   f ("u" . elisp-index-search)
+   . ("v" . apropos-value)
+   / ("z" . describe-coding-system)))
+
+-------
+Ctrl-SPACE l
+-------
+   ("SPC" . whitespace-mode)
+
+   w ("," . abbrev-mode)
+   e ("." . toggle-frame-fullscreen)
+   q ("'" . frameset-to-register)
+   z (";" . window-configuration-to-register)
+
+   ("1" . set-input-method)
+   ("2" . global-hl-line-mode)
+   ("4" . global-display-line-numbers-mode)
+   ("5" . visual-line-mode)
+   ("6" . calendar)
+   ("7" . calc)
+   ;; 8
+   ("9" . shell-command)
+   ("0" . shell-command-on-region)
+
+   a ("a" . text-scale-adjust)
+   n ("b" . toggle-debug-on-error)
+   i ("c" . toggle-case-fold-search)
+   h ("d" . narrow-to-page)
+   d ("e" . eshell)
+   ;; f
+   u ("g" . xah-toggle-read-novel-mode)
+   j ("h" . widen)
+   g ("i" . make-frame-command)
+   c ("j" . flyspell-buffer)
+   v ("k" . menu-bar-open)
+   p ("l" . toggle-word-wrap)
+   m ("m" . jump-to-register)
+   l ("n" . narrow-to-region)
+   s ("o" . variable-pitch-mode)
+   r ("p" . read-only-mode)
+   k ("t" . narrow-to-defun)
+   f ("u" . shell)
+   , ("w" . eww)
+   b ("x" . save-some-buffers)
+   t ("y" . toggle-truncate-lines)
+   / ("z" . abort-recursive-edit)));;; 
+
+-----------
+Ctrl-SPACE or SPACE (in command mode) o
+-----------
+   ("SPC" . rectangle-mark-mode)
+
+   w ("," . apply-macro-to-region-lines)
+   e ("." . kmacro-start-macro)
+
+   ("3" . number-to-register)
+   ("4" . increment-register)
+
+   i ("c" . replace-rectangle)
+   h ("d" . delete-rectangle)
+   d ("e" . call-last-kbd-macro)
+   u ("g" . kill-rectangle)
+   p ("l" . clear-rectangle)
+   g ("i" . xah-space-to-newline)
+   l ("n" . rectangle-number-lines)
+   s ("o" . open-rectangle)
+   r ("p" . kmacro-end-macro)
+   o ("r" . yank-rectangle)
+   f ("u" . xah-quote-lines)
+   t ("y" . delete-whitespace-rectangle)))
+
+---------
+Ctrl-SPACE k
+---------
+   ("SPC" . xah-clean-whitespace)
+   ("TAB" . move-to-column)
+
+   ("1" . xah-append-to-register-1)
+   ("2" . xah-clear-register-1)
+
+   ("3" . xah-copy-to-register-1)
+   ("4" . xah-paste-from-register-1)
+
+   ("8" . xah-clear-register-1)
+   ("7" . xah-append-to-register-1)
+
+   e ("." . sort-lines)
+   w ("," . sort-numeric-fields)
+   q ("'" . reverse-region)
+   ;; a
+   n ("b" . xah-reformat-to-sentence-lines)
+   i ("c" . goto-char)
+   h ("d" . mark-defun)
+   d ("e" . list-matching-lines)
+   y ("f" . goto-line )
+   g ("i" . delete-non-matching-lines)
+   c ("j" . copy-to-register)
+   v ("k" . insert-register)
+   p ("l" . xah-escape-quotes)
+   m ("m" . xah-make-backup-and-save)
+   l ("n" . repeat-complex-command)
+
+   r ("p" . query-replace-regexp)
+
+   o ("r" . copy-rectangle-to-register)
+
+   k ("t" . repeat)
+   f ("u" . delete-matching-lines)
+
+   , ("w" . xah-next-window-or-frame)
+
+   t ("y" . delete-duplicate-lines)))
+
+--------
+Ctrl-SPACE ,
+--------
+   ("DEL" . xah-delete-current-file)
+   ("e" . eval-buffer)
+   
+   ("d" . eval-defun)
+   ("m" . eval-last-sexp)
+   r ("p" . eval-expression)
+   f ("u" . eval-region)
+   x ("q" . save-buffers-kill-terminal)
+   , ("w" . delete-frame)
+   c ("j" . xah-run-current-file)))
+
+-----------
+Ctrl+SPACE
+-----------
+   ("SPC" . xah-fly-insert-mode-activate)
+   ("DEL" . xah-fly-insert-mode-activate)
+   ("RET" . xah-fly-M-x)
+
+   ("TAB" . xah-fly--tab-key-map)
+   d ("e" . xah-fly-e-keymap)
+   w ("," . xah-fly-comma-keymap)
+   e ("." . xah-fly-dot-keymap)
+   j ("h" . xah-fly-h-keymap)
+   i ("c" . xah-fly-c-keymap)
+   o ("r" . xah-fly-r-keymap)
+   i ("c" . xah-fly-c-keymap)
+
+  
+   ("\\" . toggle-input-method)
+
+   ("3" . delete-window)
+   ("4" . split-window-right)
+   ("5" . balance-windows)
+   ("6" . xah-upcase-sentence)
+
+   ("9" . ispell-word)
+   ;; 0
+
+   a ("a" . mark-whole-buffer)
+   n ("b" . end-of-buffer)
+   h ("d" . beginning-of-buffer)
+   y ("f" . xah-search-current-word)
+   u ("g" . xah-close-current-buffer)
+   g ("i" . kill-line)
+   c ("j" . xah-copy-all-or-region)
+   
+   q ("'" . xah-fill-or-unfill)
+   ' ("-" . xah-show-formfeed-as-line)
+
+   \ ("\\" . toggle-input-method)
+
+   ("3" . delete-window)
+   ("4" . split-window-right)
+   ("5" . balance-windows)
+   ("6" . xah-upcase-sentence)
+
+   ("9" . ispell-word)
+
+   a ("a" . mark-whole-buffer)
+   n ("b" . end-of-buffer)
+   h ("d" . beginning-of-buffer)
+   d ("e" . xah-fly-e-keymap)
+   y ("f" . xah-search-current-word)
+   u ("g" . xah-close-current-buffer)
+   j ("h" . xah-fly-h-keymap)
+   g ("i" . kill-line)
+   c ("j" . xah-copy-all-or-region)
+   v ("k" . xah-paste-or-paste-previous)
+   p ("l" . recenter-top-bottom)
+   m ("m" . dired-jump)
+   l ("n" . xah-fly-n-keymap)
+   s ("o" . exchange-point-and-mark)
+   r ("p" . query-replace)
+   x ("q" . xah-cut-all-or-region)
+   ; ("s" . save-buffer)
+   k ("t" . xah-fly-t-keymap)
+   f ("u" . switch-to-buffer)
+   ;; v
+   , ("w" . xah-fly-w-keymap)
+   b ("x" . xah-toggle-previous-letter-case)
+   t ("y" . xah-show-kill-ring)
+
+   v ("k" . xah-paste-or-paste-previous)
+   p ("l" . recenter-top-bottom)
+   m ("m" . dired-jump)
+
